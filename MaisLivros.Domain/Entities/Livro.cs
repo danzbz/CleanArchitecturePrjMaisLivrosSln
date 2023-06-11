@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaisLivros.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,13 @@ namespace MaisLivros.Models
         public String Autor { get; set; }
 
         public String Nome { get; set; }
+
+        public ISBN ISBN { get; set; }
+
+        public Livro(string titulo, ISBN isbn)
+        {
+            Nome = titulo;
+            ISBN = isbn ?? throw new ArgumentNullException(nameof(isbn), "ISBN não pode ser nulo.");
+        }
     }
 }
