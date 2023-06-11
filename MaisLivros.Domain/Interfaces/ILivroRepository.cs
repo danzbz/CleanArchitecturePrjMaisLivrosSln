@@ -8,5 +8,8 @@ namespace MaisLivros.Domain.Interfaces
     public interface ILivroRepository
     {
         IEnumerable<Livro> GetLivros();
+
+        void AddLivro(Livro livro);
+
     }
 }

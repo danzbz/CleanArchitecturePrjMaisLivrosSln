@@ -4,7 +4,9 @@ using System.Text;
 
 namespace MaisLivros.Application.UseCases.DTO
 {
-    class ListagemLivrosDTO
+    public class LivroDTO
     {
+        public string Nome { get; set; }
+        public string Autor { get; set; }
     }
 }

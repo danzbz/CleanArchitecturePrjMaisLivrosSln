@@ -8,18 +8,12 @@ namespace MaisLivros.Models
 {
     public sealed class Livro
     {
-        public Int32 CdLivro { get; set; }
+        public String Edicao { get; set; }
 
-        public Int32 CdUsuario { get; set; }
+        public String Idioma { get; set; }
 
-        public String TxEdicao { get; set; }
+        public String Autor { get; set; }
 
-        public String TxIdioma { get; set; }
-
-        public String TxAutor { get; set; }
-
-        public String TxUrlFoto { get; set; }
-
-        public String TxNome { get; set; }
+        public String Nome { get; set; }
     }
 }

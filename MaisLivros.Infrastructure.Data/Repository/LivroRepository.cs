@@ -19,5 +19,11 @@ namespace MaisLivros.Infrastructure.Data.Repository
             return _context.Livro;
         }
 
+        public void AddLivro(Livro livro)
+        {
+            _context.Livro.Add(livro);
+            _context.SaveChanges();
+        }
+
     }
 }
